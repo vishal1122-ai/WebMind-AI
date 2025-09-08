@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>WebMind</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <h1>WebMind</h1>
+      <button id="themeToggle">🌗</button>
+    </header>
+
+    <textarea id="inputText" placeholder="Text to process..."></textarea>
+
+    <select id="actionSelect">
+      <option value="summarize">Summarize</option>
+      <option value="explain">Explain like I'm 5</option>
+      <option value="translate">Translate to English</option>
+      <option value="generate">Generate response</option>
+    </select>
+
+    <button id="runBtn">Run</button>
+
+    <div id="spinner" hidden>Loading…</div>
+    <pre id="output"></pre>
+    <button id="copyBtn" hidden>Copy</button>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

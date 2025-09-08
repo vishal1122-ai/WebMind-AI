@@ -1,0 +1,173 @@
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* .webmind-container {
+  padding: 20px;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #ffffff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+} */
+
+.webmind-container h2 {
+  font-size: 24px;
+  color: #333;
+  margin: 0;
+}
+
+.selected-text {
+  font-style: italic;
+  color: #555;
+  font-size: 14px;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.action-btn {
+  flex: 1 1 45%;
+  background: #0077ff;
+  color: white;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.action-btn:hover {
+  background: #005fcc;
+  transform: scale(1.05);
+}
+
+.custom-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.custom-input-container.hidden {
+  display: none;
+}
+
+#custom-input {
+  width: 100%;
+  height: 60px;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+#send-custom {
+  align-self: flex-start;
+  padding: 8px 12px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#send-custom:hover {
+  background: #218838;
+}
+
+#webmind-sidebar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 400px;
+  height: 100vh;
+  z-index: 9999;
+  background: #fff;
+  box-shadow: -2px 0 12px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  animation: slideIn 0.3s ease forwards;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.webmind-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem;
+  overflow-y: auto;
+  min-height: 0;
+  gap: 1rem;
+}
+
+.result-box {
+  background: #f5f5f5;
+  border-radius: 8px;
+  padding: 1rem;
+  flex-grow: 1;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  font-size: 14px;
+  line-height: 1.5;
+  border: 1px solid #ddd;
+  min-height: 150px;
+  max-height: 300px; /* You can increase this if needed */
+}
+
+.prompt-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.prompt-box textarea {
+  resize: vertical;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  width: 100%;
+  min-height: 40px;
+}
+
+button.send-btn {
+  background: #00b894;
+  color: white;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  width: 100%;
+  font-size: 14px;
+}
+
+button.send-btn:hover {
+  background: #019875;
+}
+
+.close-btn {
+  margin-top: auto;
+  align-self: flex-end;
+  background: transparent;
+  color: #999;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #333;
+}
